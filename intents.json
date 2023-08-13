@@ -1,0 +1,67 @@
+{"intents" : [
+    {"tag":"greetings", 
+    "patterns": ["hello", "hey", "greeting", "good day", "what's up", "hi"], 
+    "responses":  ["Hello!", "Hey!", "Hi! what can I do for you?"]
+},
+
+{"tag": "goodbye", 
+"patterns": ["chao", "goodbye", "night night", "bye"], 
+"responses": ["chao", "goodbye", "bye"]
+},
+
+{"tag": "age", 
+"patterns": ["how old are you?", "how old is york university?", ""], 
+"responses": ["York is about 64 years old, and York university Library has been open since then."]
+},
+
+{"tag": "Books", 
+"patterns": ["where to find name of the book", "i want to find this article", "this audio book"], 
+"responses": ["you can find your specific book in 'search omni cataloge' search bar"]
+},
+ 
+{"tag":"name", 
+"patterns": ["what's your name?"], 
+"responses":  ["My name is Atlas, a language model created by team AF"]
+},
+
+{"tag":"hobbies", 
+"patterns": ["what are yur hobbies", "what do you do for living", "what do you do"], 
+"responses":  ["Hello!", "Hey!", "what can I do for you?"]
+},
+
+{"tag":"feelng", 
+"patterns": ["how do you feel", "how are you?", "how's everything?"], 
+"responses":  ["Everything is great! Thank you for asking"]
+},
+
+{"tag":"workshops", 
+"patterns": ["how can i find the workshops", "what workshops are happening", ""], 
+"responses":  ["You can find all information about workshops at bottom of the website"]
+},
+
+{"tag":"connect", 
+"patterns": ["how can i contact to york university library?"], 
+"responses":  ["All contact infromation is at bottom of the website."]
+},
+
+{"tag":"reservation", 
+"patterns": ["How can i make a reservation at library"], 
+"responses":  ["All information and links regarding the reservation is set in website."]
+},
+
+{"tag":"steacie library", 
+"patterns": ["where is steacie library"], 
+"responses":  ["it's beside lassonde building"]
+},
+
+{"tag":"Libraries", 
+"patterns": ["How many libraries does york have"], 
+"responses":  ["couple inside and, some outside"]
+},
+
+{"tag":"scott library", 
+"patterns": ["where is scott library"], 
+"responses":  ["in scott building"]
+}
+
+]}
