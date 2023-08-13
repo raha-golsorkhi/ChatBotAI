@@ -51,10 +51,14 @@ def get_response(intents_list, intents_json):
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if i['tag'] == tag:
-            result = random.choice(i['responses'])
+            if 'responses' in i:
+                result = random.choice(i['responses'])
+            else:
+                result = "Sorry, I'm not sure how to respond to that."
             break
 
     return result
+
 
 print("BOT is running")
 
