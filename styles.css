@@ -1,0 +1,26 @@
+#chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chat-log {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.user-message {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.bot-message {
+    background-color: #e0f3ff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
