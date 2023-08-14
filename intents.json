@@ -1,67 +1,124 @@
 {"intents" : [
+
     {"tag":"greetings", 
-    "patterns": ["hello", "hey", "greeting", "good day", "what's up", "hi"], 
+    "patterns": ["hello", "hey", "greeting", "good day", "hi"], 
     "responses":  ["Hello!", "Hey!", "Hi! what can I do for you?"]
 },
-
+{"tag": "goodmorning", 
+"patterns": ["goodmorning", "good morning"], 
+"responses": ["Good morning!"]
+},
+{"tag": "Thanks", 
+"patterns": ["Thanks", "Thank you"], 
+"responses": ["No problem!"]
+},
+{"tag": "have a good day", 
+"patterns": ["have a good night", "have a good day"], 
+"responses": ["Thank you! You too."]
+},
 {"tag": "goodbye", 
-"patterns": ["chao", "goodbye", "night night", "bye"], 
-"responses": ["chao", "goodbye", "bye"]
+"patterns": ["ciao", "goodbye", "night night", "bye"], 
+"responses": ["ciao", "goodbye", "bye"]
 },
-
-{"tag": "age", 
-"patterns": ["how old are you?", "how old is york university?", ""], 
-"responses": ["York is about 64 years old, and York university Library has been open since then."]
+{"tag":"feelng", 
+"patterns": ["how do you feel", "how are you?", "how's everything?"], 
+"responses":  ["Everything is great!"]
 },
-
-{"tag": "Books", 
-"patterns": ["where to find name of the book", "i want to find this article", "this audio book"], 
-"responses": ["you can find your specific book in 'search omni cataloge' search bar"]
-},
- 
 {"tag":"name", 
 "patterns": ["what's your name?"], 
 "responses":  ["My name is Atlas, a language model created by team AF"]
 },
-
+{"tag": "age", 
+"patterns": ["how old is york university?"], 
+"responses": ["York is about 64 years old, and York university Library has been open since then."]
+},
+{"tag":"color", 
+"patterns": ["what's your favorite color"], 
+"responses":  ["My favorite color is red, as York University's logo is red."]
+},
 {"tag":"hobbies", 
-"patterns": ["what are yur hobbies", "what do you do for living", "what do you do"], 
-"responses":  ["Hello!", "Hey!", "what can I do for you?"]
+"patterns": ["what are yur hobbies"], 
+"responses":  ["I am a language model created by group AF"]
 },
 
-{"tag":"feelng", 
-"patterns": ["how do you feel", "how are you?", "how's everything?"], 
-"responses":  ["Everything is great! Thank you for asking"]
+
+{"tag":"Group AF", 
+"patterns": ["what are the members of group af"], 
+"responses":  ["We are York University students. Raha, Morsal, Jasdeep, Ima, Paola, Jay, Jabril, Anita"]
+},
+{"tag":"abbreviation", 
+"patterns": ["what does Atlas stand for"], 
+"responses":  ["Automated Text Library Assistace System"]
+},
+{"tag":"Job", 
+"patterns": ["what do you do?", "what do you do for living"], 
+"responses":  ["I make users' navigating York library website better."]
 },
 
-{"tag":"workshops", 
-"patterns": ["how can i find the workshops", "what workshops are happening", ""], 
-"responses":  ["You can find all information about workshops at bottom of the website"]
-},
 
-{"tag":"connect", 
-"patterns": ["how can i contact to york university library?"], 
-"responses":  ["All contact infromation is at bottom of the website."]
+{"tag":"work time", 
+"patterns": ["When does the library close today", "What are the library's hours on weekends?", "Can you tell me the operating hours for tomorrow?", "Is the library currently open?"], 
+"responses":  ["Scott library is open 10am - 7pm on weekdays, 11am-4pm on Saturday, and 2pm - 7pm on Sunday. For more information visit https://www.library.yorku.ca/web/hours-and-locations/ "]
 },
-
+{"tag": "exam period", 
+"patterns": ["Are there any extended hours for exam periods?"], 
+"responses": ["Yes, during exam periods, the library often has extended hours. It's recommended to check the library's website on https://www.library.yorku.ca/web/hours-and-locations/ or contact them for specific information on extended hours during exams."]
+},
 {"tag":"reservation", 
-"patterns": ["How can i make a reservation at library"], 
-"responses":  ["All information and links regarding the reservation is set in website."]
+"patterns": ["How can I reserve a studying space at the library?", "Can I reserve a studying space for a group?"], 
+"responses":  ["To reserve a studying space, you can either use our online reservation system on https://www.library.yorku.ca/web/ask-services/book-a-study-seatspace-at-the-libraries/ or visit the library's front desk."]
+},
+{"tag":"limit for reservation", 
+"patterns": ["Is there a limit to how long I can reserve a studying space?", "Are there any restrictions on reserving studying spaces?"], 
+"responses":  ["Study space reservation times may vary. You can check https://www.library.yorku.ca/web/ask-services/book-a-study-seatspace-at-the-libraries/ for more information"]
+},
+{"tag":"cancelling reservation", 
+"patterns": ["How do I cancel a studying space reservation?"], 
+"responses":  ["You can usually cancel a reservation through the library's online reservation system on https://www.library.yorku.ca/web/ask-services/book-a-study-seatspace-at-the-libraries/ or by contacting the library's staff."]
+},
+{"tag":"changing time slot", 
+"patterns": ["Can I change my reserved studying space to a different time slot?"], 
+"responses":  ["In many cases, you can modify your reservation through the library's online system on https://www.library.yorku.ca/web/ask-services/book-a-study-seatspace-at-the-libraries/ , provided that there's availability for the new time slot."]
 },
 
-{"tag":"steacie library", 
-"patterns": ["where is steacie library"], 
-"responses":  ["it's beside lassonde building"]
+{"tag":"Locations", 
+"patterns": ["where is scott library", "where is the location of all libraries"], 
+"responses":  ["Scott library is at scott building, in 4700 Keele Street. For more information visit https://www.library.yorku.ca/web/locations-and-spaces/library-and-archives-locations/."]
 },
 
-{"tag":"Libraries", 
-"patterns": ["How many libraries does york have"], 
-"responses":  ["couple inside and, some outside"]
+{"tag":"Workshops", 
+"patterns": ["how can i access workshop information"], 
+"responses":  ["To find information about workshops, visit this link https://yorku.libcal.com/calendar/libraryworkshops?cid=7880&t=d&d=0000-00-00&cal=7880&inc=0 ."]
 },
 
-{"tag":"scott library", 
-"patterns": ["where is scott library"], 
-"responses":  ["in scott building"]
+{"tag":"contact", 
+"patterns": ["how can i contact York"], 
+"responses":  ["You can visit this website for contact information, https://www.library.yorku.ca/web/about-us/contact-us/ "]
+},
+
+{"tag":"finding a book", 
+"patterns": ["how can i find a book", "how can i find a article", "how can i find a reserves"], 
+"responses":  ["You can search for a book/article on Omni Catalogue, to look for broader range of books you can use advance search below the Omni Catalogue."]
+},
+{"tag":"personal account", 
+"patterns": ["Do i need to have a personal account to use accomodations"], 
+"responses":  ["If you are a York student, you can log in with Passport York, otherwise you need to authenticate using the barcode number on their library card and password."]
+},
+{"tag":"library card", 
+"patterns": ["how can i get my library card"], 
+"responses":  ["You can visit this website for contact information, https://www.library.yorku.ca/web/about-us/contact-us/ or visit the library's front desk."]
+},
+{"tag":"academic interity", 
+"patterns": ["how can i find information about academic integrity"], 
+"responses":  ["You can visit the following website for information on academic integrity, https://www.library.yorku.ca/web/research-learn/citing-your-work-academic-integrity/academic-integrity/"]
+},
+{"tag":"citation tools", 
+"patterns": ["how can i find information about citation tools"], 
+"responses":  ["You can find information about citation tool on https://www.library.yorku.ca/web/research-learn/citing-your-work-academic-integrity/citations/ ."]
+},
+{"tag":"citing work", 
+"patterns": ["how can i find information about citation", "how can i find information about citing a work", "information about citation"], 
+"responses":  ["You can find information about citation on https://researchguides.library.yorku.ca/styleguides ."]
 }
 
 ]}
