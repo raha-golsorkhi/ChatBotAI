@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (bestIntent && bestIntent.responses && bestIntent.responses.length > 0) {
                     return "Atlas: " + bestIntent.responses[Math.floor(Math.random() * bestIntent.responses.length)];
                 } else {
-                    return "Atlas: Sorry, I'm not sure how to respond to that.";
+                    return "Atlas: I apologize, but I don't have the information or capability to answer that question at the moment.";
                 }
             }
 
