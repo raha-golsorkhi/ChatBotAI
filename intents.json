@@ -34,7 +34,7 @@
 },
 {"tag": "age", 
 "patterns": ["how old is york university?"], 
-"responses": ["York is about 64 years old, and York university Library has been open since then."]
+"responses": ["York is about 64 years old, and York Library has been open since then."]
 },
 {"tag":"color", 
 "patterns": ["what's your favorite color"], 
@@ -47,7 +47,7 @@
 
 
 {"tag":"Group AF", 
-"patterns": ["what are the members of group af"], 
+"patterns": ["who are the members of group af", "who is team AF"], 
 "responses":  ["We are York University students. Raha, Morsal, Jasdeep, Ima, Paola, Jay, Jabril, Anita."]
 },
 {"tag":"team AF", 
@@ -74,7 +74,7 @@
 
 {"tag":"work time", 
 "patterns": ["when is the library open", "When does the library close today", "What are the library's hours on weekends?", "Can you tell me the operating hours for tomorrow?", "Is the library currently open?"], 
-"responses":  ["Scott library is open 10am - 7pm on weekdays, 11am-4pm on Saturday, and 2pm - 7pm on Sunday. For more information visit https://www.library.yorku.ca/web/hours-and-locations/ "]
+"responses":  ["Scott library is open 10am - 7pm on weekdays, 11am-4pm on Saturdays, and 2pm - 7pm on Sundays. For more information visit https://www.library.yorku.ca/web/hours-and-locations/ "]
 },
 {"tag": "exam period", 
 "patterns": ["Are there any extended hours for exam periods?"], 
@@ -99,13 +99,18 @@
 
 {"tag":"Locations", 
 "patterns": ["where is scott library", "where is the location of all libraries"], 
-"responses":  ["Scott library is at scott building, in 4700 Keele Street. For more information visit https://www.library.yorku.ca/web/locations-and-spaces/library-and-archives-locations/."]
+"responses":  ["Scott library is at scott building, in 4700 Keele Street. To find other libraries visit https://www.library.yorku.ca/web/locations-and-spaces/library-and-archives-locations/."]
 },
 
 {"tag":"Workshops", 
-"patterns": ["how can i access workshop information"], 
-"responses":  ["To find information about workshops, visit this link https://yorku.libcal.com/calendar/libraryworkshops?cid=7880&t=d&d=0000-00-00&cal=7880&inc=0 ."]
+"patterns": ["how can i access workshop information", "where can i find workshops", "what workshops are happening right now"], 
+"responses":  ["To find information about workshops you can search in Library/Yorku website search, or for direct access visit this link https://yorku.libcal.com/calendar/libraryworkshops?cid=7880&t=d&d=0000-00-00&cal=7880&inc=0 ."]
 },
+{"tag":"York Libraries", 
+"patterns": ["Name all york libraries"], 
+"responses":  ["Scott, Steacie Science/engineering library, Bronfman business library, Leslie Frost, Osgoode."]
+},
+
 
 {"tag":"contact", 
 "patterns": ["how can i contact York"], 
@@ -136,6 +141,22 @@
 "patterns": ["how can i find information about citation", "how can i find information about citing a work", "information about citation"], 
 "responses":  ["You can find information about citation on https://researchguides.library.yorku.ca/styleguides ."]
 },
+{"tag": "french",
+"patterns": ["Does york have other languages", "does york websites have french"],
+"responses": ["York University Provides French services for our French community."]
+},
+{"tag": "hope",
+"patterns": ["what is the hope for team af", "what is team af planning to do", "what's the next step for team af"],
+"responses": ["Team AF is excited to amplify the York Library Website by introducing accessibility features, extending the chatbot to a mobile app, and achieving a more comprehensive online presence."]
+},
+{"tag": "purpose",
+"patterns": ["What is the main purpose of redesigning York library website"],
+"responses": ["To be more accessible and more resourceful for the user."]
+},
+{"tag": "public library",
+"patterns": ["How is the public library different from the University Academic Library?"],
+"responses": ["Public libraries serve the general public, by having general books and recreations, however academic libraries focus more on their community."]
+},
 
 {"tag":"expression", 
 "patterns": ["wow", "cool", "nice", "interesting"], 
@@ -147,41 +168,21 @@
 "responses": ["You can access research databases through the library's website. These databases provide access to scholarly articles, journals, and other academic resources."]
 },
 
-{"tag": "library-subject-guides",
-"patterns": ["What are subject guides and how can they help me?", "Tell me about subject guides"],
-"responses": ["Subject guides are curated lists of resources, databases, and research tips tailored to specific subjects or topics. They can help you navigate through relevant materials for your research."]
-},
 {"tag": "library-exhibitions",
 "patterns": ["Are there any ongoing library exhibitions?", "Tell me about library exhibitions"],
-"responses": ["Yes, libraries often host exhibitions showcasing special collections, artwork, or historical artifacts. You can find information about ongoing exhibitions on the library's website or at the library itself."]
-},
-{"tag": "library-fines",
-"patterns": ["What are the consequences of returning items late?", "Tell me about library fines"],
-"responses": ["Returning items late can result in overdue fines. The amount of the fine depends on the type of material and the duration it's overdue. It's a good idea to return items on time to avoid fines."]
+"responses": ["Yes, libraries host exhibitions showcasing special collections, artwork, or historical artifacts. You can find information about ongoing exhibitions on the library's website or at the library itself. For online exhbition viist https://www.library.yorku.ca/web/collections/online-exhibits/ . "]
 },
 {"tag": "library-technology",
 "patterns": ["Are there computers and Wi-Fi available at the library?", "Tell me about library technology"],
-"responses": ["Yes, libraries usually provide computers with internet access and Wi-Fi for users. These resources are valuable for research, studying, and accessing online materials."]
-},
-{"tag": "library-feedback",
-"patterns": ["How can I provide feedback about the library's services?", "Tell me about giving feedback"],
-"responses": ["Your feedback is important! Many libraries have feedback mechanisms like suggestion boxes, surveys, or online forms where you can share your thoughts about the library's services."]
+"responses": ["York libraries provide computers with internet access and Wi-Fi for users. These resources are valuable for research, studying, and accessing online materials. a York Student can log in York Plus, and a guest has to log in the guest wifi"]
 },
 {"tag": "library-social-media",
 "patterns": ["Does the library have a presence on social media?", "Tell me about library social media"],
-"responses": ["Yes, libraries often have social media accounts where they share updates, events, resources, and interact with users. You can follow them on platforms like Facebook, Twitter, or Instagram."]
+"responses": ["Yes, Libraries have social media accounts where they share updates, events, resources, and interact with users. You can follow them on platforms like Facebook, X, or Instagram. You can find our social media at bottom of the website."]
 },
 {"tag": "library-archives",
 "patterns": ["Are there archives or special collections in the library?", "Tell me about library archives"],
 "responses": ["Many libraries have archives or special collections that house rare books, historical documents, manuscripts, and other unique materials. These collections are often valuable for research and exploration."]
-},
-{"tag": "library-multimedia",
-"patterns": ["Can I borrow multimedia materials like DVDs or CDs from the library?", "Tell me about borrowing multimedia"],
-"responses": ["Yes, libraries often have multimedia collections that include DVDs, CDs, and other audiovisual materials. You can borrow these materials like you would with books."]
-},
-{"tag": "library-remote-help",
-"patterns": ["Is there remote help available for using library resources?", "Tell me about remote assistance"],
-"responses": ["Absolutely! Libraries offer remote assistance through chat services, email, or online consultations. This way, you can get help with your research and inquiries even when you're not on campus."]
 },
 {"tag": "library-parking",
 "patterns": ["Is there parking available at the library?", "Tell me about library parking"],
@@ -189,35 +190,31 @@
 },
 {"tag": "library-student-support",
 "patterns": ["Are there resources to help students with their academic needs?", "Tell me about student support"],
-"responses": ["Yes, libraries offer various resources to support students' academic needs. This might include workshops, writing centers, tutoring services, and more. For more information check https://www.library.yorku.ca/web/ask-services/"]
+"responses": ["Libraries offer various resources to support students' academic needs. This include workshops, writing centers, tutoring services, and more. For more information check https://www.library.yorku.ca/web/ask-services/"]
 },
-{"tag": "library-career-services",
+{"tag": "library career services",
 "patterns": ["Does the library offer resources for career development?", "Tell me about career services"],
 "responses": ["Yes, libraries have resources related to career development, such as resume-building workshops, job search assistance, and access to career-related databases."]
-},
-{"tag": "library-quiet-hours",
-"patterns": ["When are the library's quiet hours?", "Tell me about quiet hours"],
-"responses": ["Libraries typically have designated quiet hours or zones where users can focus and study without disturbances. You can check the library's website or ask staff for information about quiet hours."]
 },
 {"tag": "library-volunteer",
 "patterns": ["Can I volunteer at the library?", "Tell me about library volunteering"],
 "responses": ["Yes, libraries offer volunteering opportunities for students and community members. Volunteering might involve assisting with events, workshops, or shelving materials."]
 },
-{"tag": "library-printing-options",
+{"tag": "library printing options",
 "patterns": ["Can I print in color at the library?", "Tell me about printing options"],
-"responses": ["Yes, libraries often offer both black-and-white and color printing options. Printing costs for color prints might be higher than for black-and-white."]
+"responses": ["Yes, libraries often offer both black-and-white and color printing options. Printing costs for color prints might be higher than for black-and-white. for more information visit https://www.library.yorku.ca/web/ask-services/printing-and-computing/ "]
 },
 {"tag": "library-loan-renewal",
 "patterns": ["Can I renew my borrowed items online?", "Tell me about renewal process"],
-"responses": ["Yes, you can often renew your borrowed items online through your library account. Renewal periods might vary depending on the type of material."]
+"responses": ["Yes, you can renew your borrowed items online through your library account. For more information visit https://www.library.yorku.ca/web/ask-services/borrow-renew-return/ ."]
 },
-{"tag": "library-alumni-access",
-"patterns": ["Can alumni use library resources?", "Tell me about alumni access"],
-"responses": ["libraries offer limited access to their resources for alumni, such as borrowing privileges, database access, or in-person services. Alumni can inquire about available services and policies."]
-},
-{"tag": "library-international-students",
+{"tag": "library international students",
 "patterns": ["Are there resources for international students at the library?", "Tell me about resources for international students"],
-"responses": ["Yes, libraries provide resources to support international students' academic and cultural integration, including language assistance, orientation materials, and cross-cultural workshops."]}
+"responses": ["Libraries provide resources to support international students' academic and cultural integration, including language assistance, orientation materials, and cross-cultural workshops. For more information https://yorkinternational.yorku.ca ."]
+},
+{"tag": "The Digital Scholarship Centre",
+"patterns": ["how can i find The Digital Scholarship Centre"],
+"responses": ["To access The Digital Scholarship Centre visit https://www.library.yorku.ca/ds/ ."]}
  
 
 ]}
